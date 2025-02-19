@@ -7,8 +7,8 @@ The program will serve you two prompts.
 One asking for your desired password length.
 One asking if you want to include special characters in your generated password. 
 
-To answer the first prompt, enter an integer number between 1 and 50.
+1. To answer the first prompt, enter an integer number between 1 and 50.
 
-To answer the second prompt, type "yes" or "no".
+2. To answer the second prompt, type "yes" or "no".
 
-The program will generate a randomized password and print it to the console where the user can copy the results to their clipboard.
+3. The program will generate a randomized password and print it to the console where the user can copy the results to their clipboard.
