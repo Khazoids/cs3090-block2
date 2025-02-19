@@ -1,7 +1,7 @@
 # cs3090-block2
 This program is a secure password generator. Note that this program only generates a random password of a specified length but does not save it anywhere.
 
-How to use this program:
+# How to use this program:
 Compile and execute the program.
 The program will serve you two prompts. 
 One asking for your desired password length.
