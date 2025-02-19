@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class Main {
     static final int NUM_PROMPTS = 2;
-
     static Random rand = new Random();
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
@@ -14,7 +13,7 @@ public class Main {
         while(currentPrompt < NUM_PROMPTS) {
             switch(currentPrompt) {
                 case(0):
-                    System.out.println("How many characters long do you want your password to be (between 0 and 100)? ");
+                    System.out.println("How many characters long do you want your password to be (between 1 and 50)? ");
                     String input = scanner.nextLine();
                     try {
                         passwordLength = Integer.parseInt(input);
@@ -25,7 +24,7 @@ public class Main {
                     break;
                 case(1):
                     System.out.println("Should special characters be included? Type 'Yes' or 'No'. ");
-                    String input2 = scanner.nextLine().toLowerCase();
+                    String input2 = scanner.nextLine().toLowerCase().replaceAll("\\s+","");
                     if(input2.compareTo("yes") == 0) {
                         includeSpecial = true;
                         currentPrompt++;
