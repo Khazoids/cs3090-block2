@@ -14,7 +14,7 @@ public class Main {
             switch(currentPrompt) {
                 case(0):
                     System.out.println("How many characters long do you want your password to be (between 1 and 50)? ");
-                    String input = scanner.nextLine();
+                    String input = scanner.nextLine().replaceAll("\\s+","");
                     try {
                         passwordLength = Integer.parseInt(input);
                         if(passwordLength > 0 && passwordLength <= 50) currentPrompt++;
